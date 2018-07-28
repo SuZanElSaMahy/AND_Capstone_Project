@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoDetailActivity"
+    android:background="@drawable/screen">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/OpeningTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:popupTheme="@style/OpeningTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--  Youtube Player Fragment  -->
+    <fragment
+        android:id="@+id/youtube_player_fragment"
+        android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/appbar" />
+
+    <ScrollView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/youtube_player_fragment">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp">
+            <RelativeLayout
+                android:id="@+id/video_info_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+
+                <TextView
+                    android:id="@+id/video_title_tv"
+                    android:text="Hello Card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+
+                <TextView
+                    android:id="@+id/video_desc_tv"
+                    android:text="Hello Card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/video_title_tv"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </ScrollView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_menu_share"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        style="@style/FloatingActionButton"
+        app:elevation="6dp"
+        android:backgroundTint="@color/colorPrimary"/>
+
+
+</RelativeLayout>

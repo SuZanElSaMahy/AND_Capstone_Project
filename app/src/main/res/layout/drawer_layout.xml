@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="?attr/android:windowBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/drawer_header"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <Button
+            android:id="@+id/drawer_header_action_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/colorPrimary"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background_header" />
+
+        <ImageView
+            android:id="@+id/drawer_header_np_nude_view"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="30dp"
+
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/np_logo_nude_shadow" />
+
+        <TextView
+            android:id="@+id/drawer_header_np_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignBottom="@id/drawer_header_np_nude_view"
+            android:layout_alignTop="@id/drawer_header_np_nude_view"
+            android:layout_toEndOf="@id/drawer_header_np_nude_view"
+            android:layout_toRightOf="@id/drawer_header_np_nude_view"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textSize="30dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/drawer_header_service_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@id/drawer_header_np_text_view"
+            android:layout_alignStart="@id/drawer_header_np_text_view"
+            android:layout_below="@id/drawer_header_np_text_view"
+            android:text="YouTube"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drawer_header"
+        app:elevation="0dp"
+        app:menu="@menu/drawer_items" />
+
+    <LinearLayout
+        android:id="@+id/navigation_drawer_footer"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_alignEnd="@id/navigation"
+        android:layout_alignLeft="@id/navigation"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@id/navigation"
+        android:layout_alignStart="@id/navigation"
+
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/drawer_settings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:src="?attr/settings" />
+
+        <ImageButton
+            android:id="@+id/drawer_downloads"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="?attr/download" />
+
+        <ImageButton
+            android:id="@+id/drawer_history"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="?attr/history" />
+    </LinearLayout>
+</RelativeLayout>

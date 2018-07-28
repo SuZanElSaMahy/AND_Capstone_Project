@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="FloatingActionButton" parent="android:Widget.Material.Button">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+</resources>

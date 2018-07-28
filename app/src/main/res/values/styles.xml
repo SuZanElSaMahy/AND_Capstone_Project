@@ -1,0 +1,64 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="OpeningTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@android:color/transparent</item>
+
+        <!--<item name="android:windowBackground">@color/dark_background_color</item>-->
+    </style>
+
+
+
+
+    <style name="Toolbar.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+    <style name="MaterialDrawer.DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">false</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="OpeningTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+    <style name="OpeningTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+
+    <style name="SearchBar" parent="OpeningTheme">
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorControlActivated">@android:color/white</item>
+        <item name="colorControlHighlight">@android:color/white</item>
+    </style>
+
+
+    <style name="FloatingActionButton" parent="Theme.AppCompat.Light">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="colorAccent">@color/white</item>
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <!-- Used for the background -->
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+
+</resources>

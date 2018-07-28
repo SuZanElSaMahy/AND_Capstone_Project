@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">فيد فيور</string>
+    <string name="change_channel_str">تغيير القناة</string>
+    <string name="local_str">English</string>
+    <string name="trend_str">الأكثر شيوعا</string>
+    <string name="history_str">شوهد سابقا</string>
+    <string name="nav_playlist_str">قوائم التشغيل</string>
+    <string name="main_activity_dialog_leave_str">هل انت متأكد من مغادرتك لهذه القناة ؟</string>
+    <string name="exit_str"> اضغط نعم للخروج !</string>
+    <string name="yes_str">نعم</string>
+    <string name="no_str">لا</string>
+    <string name="search">ابحث</string>
+</resources>

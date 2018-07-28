@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="common_screen_general_error" translatable="false">Error</string>
+
+    <string name="app_name">VidViewer</string>
+    <string name="search">Search</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+
+
+    <string name="change_channel_str">Change Channel</string>
+    <string name="local_str">عربي</string>
+    <string name="trend_str">Trending</string>
+    <string name="history_str">History</string>
+    <string name="nav_playlist_str">PlayLists</string>
+    <string name="get_channel_id_str1" translatable="false"> 1.Sign in to your YouTube account.<br/></string>
+    <string name="get_channel_id_str2" translatable="false"> 2.In the top right, click your account icon > settings.<br/></string>
+    <string name="get_channel_id_str3" translatable="false"> 3.Next to your profile photo, click Advanced. <br/></string>
+    <string name="get_channel_id_str4" translatable="false"> 4.You will see your channel\'s user and channel IDs under "Account information".<br/></string>
+    <string name="get_channel_id_str5" translatable="false"> 5.Enter Your Channel ID in the above text field.<br/></string>
+    <string name="get_channel_id_str6" translatable="false"> Example: UCP4bf6IHJJQehibu6ai__cg <br/></string>
+    <string name="channel_intent_str" translatable="false">channel</string>
+    <string name="enter_valid_id_str" translatable="false">Please Enter A Valid ID</string>
+    <string name="connected_to_internet_str" translatable="false">Good! Connected to Internet</string>
+    <string name="not_connected_to_internet_str" translatable="false">Sorry! Not connected to internet</string>
+    <string name="google_ads_id" translatable="false">ca-app-pub-4772808746520894~7739131675</string>
+    <string name="main_activity_play_state_str" translatable="false">play</string>
+    <string name="main_activity_id_state_str" translatable="false">items</string>
+    <string name="main_activity_dialog_leave_str">Are you sure that you want to leave ?</string>
+    <string name="exit_str">Click yes to exit!</string>
+    <string name="yes_str">Yes</string>
+    <string name="no_str">No</string>
+    <string name="main_activity_search_intent_str" translatable="false">search</string>
+    <string name="main_activity_intent_history_str" translatable="false">history</string>
+    <string name="no_result_str" translatable="false">No Result</string>
+    <string name="main_activity_intent_playlist_str" translatable="false">play</string>
+    <string name="main_fragment_state_playlist_str" translatable="false">video</string>
+    <string name="main_fragment_no_search_result_str" translatable="false">No Search result</string>
+    <string name="youtube_share_video_link" translatable="false">http://www.youtube.com/watch?v=</string>
+    <string name="share_link_str" translatable="false">Share link using</string>
+    <string name="appwidget_text" translatable="false">Channel Title</string>
+    <!--<string name="get_channel_id_str"> ID</string>-->
+
+</resources>

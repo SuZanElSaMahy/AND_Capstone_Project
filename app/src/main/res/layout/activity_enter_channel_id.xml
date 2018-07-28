@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen"
+    tools:context=".EnterChannelIdActivity">
+
+    <RelativeLayout
+        android:id="@+id/info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/channel_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="46dp"
+            android:text="Please Enter Your Channel ID"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:id="@+id/enter_id_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="66dp"
+            app:mtf_labelColor="#FFF"
+            app:mtf_openKeyboardOnFocus="true">
+
+            <EditText
+                android:id="@+id/enter_id_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/channel_info"
+                android:layout_centerHorizontal="true"
+                android:hint="ID"
+                android:textColor="@color/colorPrimary" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enter_id_layout"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp">
+
+                <TextView
+                    android:id="@+id/how_to_add_channel_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="Find your channel's ID"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/how_info_tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="start"
+                    android:text="@string/get_channel_id_str1" />
+
+                <TextView
+                    android:id="@+id/how_info_tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="start"
+                    android:text="@string/get_channel_id_str2" />
+
+                <TextView
+                    android:id="@+id/how_info_tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="start"
+                    android:text="@string/get_channel_id_str3" />
+
+                <TextView
+                    android:id="@+id/how_info_tv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="start"
+                    android:text="@string/get_channel_id_str4" />
+
+                <TextView
+                    android:id="@+id/how_info_tv5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="start"
+                    android:text="@string/get_channel_id_str5" />
+
+
+                <TextView
+                    android:id="@+id/how_info_tv6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="start"
+                    android:text="@string/get_channel_id_str6" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    <com.andexert.library.RippleView
+        android:id="@+id/more"
+        rv_centered="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp">
+
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_border"
+            android:text="Next"
+            android:textColor="@color/white" />
+    </com.andexert.library.RippleView>
+
+
+</RelativeLayout>

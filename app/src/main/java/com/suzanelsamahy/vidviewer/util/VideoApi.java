@@ -17,7 +17,7 @@ public interface VideoApi {
 
     @GET(Constants.VIDEO_URL)
     Call<VideoResponse> callVideoApi(@Query(Constants.KEY_PARAM) String apiKey ,
-                                     @Query("id") String videoId ,
+                                     @Query(Constants.ID_PARAM) String videoId ,
                                      @Query(Constants.PART_PARAM) String part) ;
 
 

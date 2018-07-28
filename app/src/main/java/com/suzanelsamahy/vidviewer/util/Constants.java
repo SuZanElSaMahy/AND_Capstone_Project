@@ -20,6 +20,8 @@ public class Constants {
     public static final String MAX_RESULTS_PARAM= "maxResults";
     public static final int MAX_RESULTS_Value= 20;
     public static final String PLAYLIST_PARAM= "playlists";
+    public static final String QUERY_PARAM= "q";
+    public static final String ID_PARAM= "id";
     public static final String PLAYLIST_ITEM_PARAM= "playlistItems";
     public static final String PLAYLIST_ITEM_ID= "playlistId";
     public static final String PART_SNIPPET= "snippet,contentDetails,statistics";

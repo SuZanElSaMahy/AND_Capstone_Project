@@ -39,6 +39,7 @@
     <string name="youtube_share_video_link" translatable="false">http://www.youtube.com/watch?v=</string>
     <string name="share_link_str" translatable="false">Share link using</string>
     <string name="appwidget_text" translatable="false">Channel Title</string>
+    <string name="btn_next_str" translatable="false">Next</string>
     <!--<string name="get_channel_id_str"> ID</string>-->
 
 </resources>

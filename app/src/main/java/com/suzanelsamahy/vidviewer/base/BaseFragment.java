@@ -6,9 +6,6 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 
 
-/**
- * Created by yassermabrouk on 10/27/16.
- */
 
 public class BaseFragment extends Fragment {
 

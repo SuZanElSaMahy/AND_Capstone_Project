@@ -53,7 +53,6 @@
 
                 <TextView
                     android:id="@+id/video_title_tv"
-                    android:text="Hello Card"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -65,7 +64,6 @@
 
                 <TextView
                     android:id="@+id/video_desc_tv"
-                    android:text="Hello Card"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -92,6 +90,7 @@
         android:layout_alignParentEnd="true"
         style="@style/FloatingActionButton"
         app:elevation="6dp"
+        android:contentDescription="@string/share_your_video_str"
         android:backgroundTint="@color/colorPrimary"/>
 
 

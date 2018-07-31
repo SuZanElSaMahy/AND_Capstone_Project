@@ -40,6 +40,14 @@
     <string name="share_link_str" translatable="false">Share link using</string>
     <string name="appwidget_text" translatable="false">Channel Title</string>
     <string name="btn_next_str" translatable="false">Next</string>
+    <string name="video_tumbnail_str" translatable="false">Video Tumbnail</string>
+    <string name="app_logo_str" translatable="false">App Logo</string>
+    <string name="share_your_video_str">Share your video</string>
+    <string name="video_title_str">Video Title</string>
+    <string name="id_str">ID</string>
+    <string name="find_your_channel_id_str" translatable="false">Find your channel\'s ID</string>
+    <string name="channel_name_str" translatable="false">Channel Name</string>
+    <string name="channel_id_example" translatable="false">UCVHFbqXqoYvEWM1Ddxl0QDg</string>
     <!--<string name="get_channel_id_str"> ID</string>-->
 
 </resources>

@@ -20,7 +20,6 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="46dp"
-            android:text="Please Enter Your Channel ID"
             android:textColor="@color/white"
             android:textSize="18sp" />
 
@@ -43,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/channel_info"
                 android:layout_centerHorizontal="true"
-                android:hint="ID"
+                android:hint="@string/id_str"
                 android:textColor="@color/colorPrimary" />
 
         </com.github.florent37.materialtextfield.MaterialTextField>
@@ -72,7 +71,7 @@
                     android:layout_marginBottom="14dp"
                     android:layout_marginTop="8dp"
                     android:gravity="center_horizontal"
-                    android:text="Find your channel's ID"
+                    android:text="@string/find_your_channel_id_str"
                     android:textStyle="bold" />
 
                 <TextView

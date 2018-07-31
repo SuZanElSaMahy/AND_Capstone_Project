@@ -175,7 +175,7 @@ public class MainActivity extends BaseAppCompatActivity
 
     private void setupSearchView() {
         searchView = (SearchView) toolbar.findViewById(R.id.search_bar);
-        searchView.setLayoutParams(new Toolbar.LayoutParams(Gravity.RIGHT));
+        searchView.setLayoutParams(new Toolbar.LayoutParams(Gravity.END));
         searchView.requestFocusFromTouch();
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -340,7 +340,7 @@ public class MainActivity extends BaseAppCompatActivity
     @Override
     public void onPlayListItemsRetrieved(List<PlayList> video) {
         hideProgressDialog();
-        videoItems = video;
+        //videoItems = video;
         ((MainFragment) viewPager.getAdapter().instantiateItem(viewPager, 0)).updateFragmentWithPlaylist(video, false);
     }
 
@@ -393,6 +393,7 @@ public class MainActivity extends BaseAppCompatActivity
 
                 @Override
                 public void onSearchError(String message) {
+                    hideProgressDialog();
                     showToastMessage(getString(R.string.no_result_str));
                 }
             });

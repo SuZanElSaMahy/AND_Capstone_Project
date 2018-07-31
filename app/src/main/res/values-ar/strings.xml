@@ -11,4 +11,6 @@
     <string name="yes_str">نعم</string>
     <string name="no_str">لا</string>
     <string name="search">ابحث</string>
+    <string name="share_your_video_str">Share your video</string>
+    <string name="video_title_str">Video Title</string>
 </resources>

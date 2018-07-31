@@ -12,24 +12,17 @@
         android:background="@android:color/white"
         android:src="@drawable/play"
         android:scaleType="fitXY"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/video_tumbnail_str"/>
 
     <TextView
         android:id="@+id/tv_video_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/iv_video"
-        android:text="Video Title"
+        android:text="@string/video_title_str"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="2dp"/>
 
-
-    <!--<TextView-->
-        <!--android:id="@+id/tv_video_views"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_below="@+id/iv_video"-->
-        <!--android:text="Video Title"-->
-        <!--android:layout_alignParentRight="true"/>-->
 
 </RelativeLayout>

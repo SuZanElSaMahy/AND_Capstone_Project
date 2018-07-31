@@ -3,6 +3,7 @@ package com.suzanelsamahy.vidviewer;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
@@ -54,7 +55,7 @@ public class MainFragment extends BaseFragment {
         return fragment;
     }
 
-
+    private Parcelable listState;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -68,9 +69,20 @@ public class MainFragment extends BaseFragment {
         }
         if (savedInstanceState != null) {
             playLists = savedInstanceState.getParcelableArrayList(getString(R.string.main_fragment_state_playlist_str));
-            setupRecyclerView(playLists);
+            listState=savedInstanceState.getParcelable("ListState");
+            recyclerView.getLayoutManager().onRestoreInstanceState(listState);
+            mAdapter = new VideoAdapter(playLists, getActivity(), new VideoAdapter.OnPlaylistItemClickListener() {
+                @Override
+                public void onChannelItemClicked(PlayList item, int pos) {
+                    mListener.onPlayListItemClickListener(item, pos);
+                }
+            });
+            recyclerView.setAdapter(mAdapter);
         }
         setupChannelRecyclerView(new ArrayList<Search>());
+
+
+
 
         return view;
     }
@@ -162,6 +174,10 @@ public class MainFragment extends BaseFragment {
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putParcelableArrayList(getString(R.string.main_fragment_state_playlist_str),  playLists);
+        outState.putParcelable("ListState", recyclerView.getLayoutManager().onSaveInstanceState());
     }
+
+
+
 
 }

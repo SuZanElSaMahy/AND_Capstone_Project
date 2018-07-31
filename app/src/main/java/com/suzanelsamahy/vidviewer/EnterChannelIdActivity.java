@@ -27,7 +27,7 @@ public class EnterChannelIdActivity extends BaseAppCompatActivity implements Con
     Button nextBtn;
 
 
-    // id=UC-fT6wIb2N5-fZexR_eBRy
+    // UC-fT6wIb2N5-fZexR_eBRy
     // UCP4bf6IHJJQehibu6ai__cg 24
 
     @Override
@@ -35,8 +35,7 @@ public class EnterChannelIdActivity extends BaseAppCompatActivity implements Con
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enter_channel_id);
         ButterKnife.bind(this);
-        idEditText.setText("UCP4bf6IHJJQehibu6ai__cg");
-
+        idEditText.setText(R.string.channel_id_example);
     }
 
 
